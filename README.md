@@ -1,5 +1,5 @@
 ##### vue 插件开发并集成到 npm 上
-`
+```
   1. 在 src 文件中新建 plugins 目录
   2. 在 plugins 目录中，新建 index.js 文件
     const requireComponent = require.context('./', true, /\.vue$/)
@@ -56,5 +56,5 @@
   9. 在项目 main.js 上引入，全局引入。
     import install  from '包名'
     Vue.use(install)
-`
+```
 
