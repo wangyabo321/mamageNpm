@@ -1,0 +1,53 @@
+{
+  "name": "cus-component-wyb",
+  "version": "0.1.1",
+  "private": false,
+  "license": "MIT",
+  "description": "自定义插件 button, 练习 npm管理包流程",
+  "main": "lib/cus-component.umd.min.js",
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint",
+    "lib": "vue-cli-service build --target lib --name cus-component --dest lib src/plugins/index.js"
+  },
+  "dependencies": {
+    "core-js": "^3.6.5",
+    "cus-component-wyb": "^0.1.1",
+    "demo-vue-npm-test": "^0.1.0",
+    "i": "^0.3.7",
+    "iview": "^3.5.4",
+    "npm": "^10.5.0",
+    "remixicon": "^3.3.0",
+    "vue": "^2.6.7"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "~4.5.9",
+    "@vue/cli-plugin-eslint": "~4.5.9",
+    "@vue/cli-service": "~4.5.9",
+    "@vue/compiler-sfc": "^3.0.0",
+    "babel-eslint": "^10.1.0",
+    "babel-plugin-import": "^1.13.6",
+    "eslint": "^6.7.2",
+    "eslint-plugin-vue": "^7.0.0"
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "extends": [
+      "plugin:vue/vue3-essential",
+      "eslint:recommended"
+    ],
+    "parserOptions": {
+      "parser": "babel-eslint"
+    },
+    "rules": {}
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ]
+}
